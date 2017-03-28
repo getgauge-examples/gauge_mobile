@@ -35,12 +35,12 @@ public class SelendroidIntegrationTest {
   @Step("enter text <input>")
   public void enterText(String input) {
     WebElement inputField = Driver.webDriver.findElement(By.id("my_text_field"));
-    inputField.sendKeys("Selendroid");
+    inputField.sendKeys(input);
   }
 
   @Step("Verify <Gauge> is entered")
   public void VerifyInputIsEntered(String input) {
     WebElement inputField = Driver.webDriver.findElement(By.id("my_text_field"));
-    Assert.assertEquals("Selendroid", inputField.getText());
+    Assert.assertEquals(input, inputField.getText());
   }
 }

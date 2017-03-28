@@ -12,12 +12,12 @@ public class Driver {
     // Holds the WebDriver instance
     public static WebDriver webDriver;
 
-    @BeforeSuite
+    @BeforeSpec
     public void initializeDriver() throws Exception {
         webDriver = DriverFactory.getDriver();
     }
 
-    @AfterSuite
+    @AfterSpec
     public void closeDriver(){
         DriverFactory.stopServer(webDriver);
     }
