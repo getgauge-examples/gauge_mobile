@@ -1,8 +1,0 @@
-{
-	"Flags": {
-		"-simple-console": "true"
-	},
-	"FailedItems": [
-		"specs/integrationTesting.spec:10"
-	]
-}

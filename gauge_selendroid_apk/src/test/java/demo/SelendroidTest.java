@@ -30,7 +30,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class SelendroidIntegrationTest {
+public class SelendroidTest {
 
   @Step("enter text <input>")
   public void enterText(String input) {
@@ -38,7 +38,7 @@ public class SelendroidIntegrationTest {
     inputField.sendKeys(input);
   }
 
-  @Step("Verify <Gauge> is entered")
+  @Step("Verify <input> is entered")
   public void VerifyInputIsEntered(String input) {
     WebElement inputField = Driver.webDriver.findElement(By.id("my_text_field"));
     Assert.assertEquals(input, inputField.getText());
