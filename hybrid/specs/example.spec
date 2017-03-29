@@ -7,8 +7,8 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 To execute this specification, run
 	gauge specs
 
-Employee details should contain Manager and
---------
+Employee details has Manager and Reportee details
+-------------------------------------------------
 * Open Employee Directory in web view
 * Find employee "John Williams" with id "4"
 * Verify the Manager "James King"
