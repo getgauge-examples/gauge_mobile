@@ -1,6 +1,6 @@
 {
 	"Flags": {
-		"-simple-console": "true"
+		"-dir": "/Users/sswaroop/work/gauge_mobile/hybrid"
 	},
 	"FailedItems": []
 }
